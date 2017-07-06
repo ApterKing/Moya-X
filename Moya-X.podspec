@@ -14,14 +14,14 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.subspec 'Core' do |ss|
-	ss.source_files = 'Moya-X/Classes/Core/*.swift'
-	ss.dependency 'Moya/RxSwift'
+    ss.source_files = 'Moya-X/Classes/Core/*.swift'
+    ss.dependency 'Moya/RxSwift'
   end
 
   s.subspec 'JSONMappable' do |ss|
-	ss.source_files = 'Moay-X/Classes/JSONMappable/*.swift'
-	ss.dependency 'Moya/RxSwift'
-	ss.dependency 'SwiftyJSON-X'
+    ss.source_files = 'Moya-X/Classes/JSONMappable/*.swift'
+    ss.dependency 'Moya/RxSwift'
+    ss.dependency 'SwiftyJSON-X'
   end
 
 end
