@@ -1,42 +1,27 @@
-#
-# Be sure to run `pod lib lint Moya-X.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
 
 Pod::Spec.new do |s|
   s.name             = 'Moya-X'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of Moya-X.'
+  s.version          = '1.0.0'
+  s.summary          = 'Moya extension'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
-  s.homepage         = 'https://github.com/wangcccong@foxmail.com/Moya-X'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/ApterKing/Moya-X'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'wangcccong@foxmail.com' => 'wangcccong@outlook.com' }
-  s.source           = { :git => 'https://github.com/wangcccong@foxmail.com/Moya-X.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'ApterKing' => 'wangcccong@outlook.com' }
+  s.source           = { :git => 'https://github.com/ApterKing/Moya-X.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'Moya-X/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'Moya-X' => ['Moya-X/Assets/*.png']
-  # }
+  s.requires_arc = true
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.subspec 'Core' do |ss|
+	ss.source_files = 'Moya-X/Classes/Core/*.swift'
+	ss.dependency 'Moya/RxSwift'
+  end
+
+  s.subspec 'JSONMappable' do |ss|
+	ss.source_files = 'Moay-X/Classes/JSONMappable/*.swift'
+	ss.dependency 'Moya/RxSwift'
+	ss.dependency 'SwiftyJSON-X'
+  end
+
 end
