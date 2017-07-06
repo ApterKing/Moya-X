@@ -1,0 +1,16 @@
+PODS:
+  - Moya-X (0.1.0)
+
+DEPENDENCIES:
+  - Moya-X (from `../`)
+
+EXTERNAL SOURCES:
+  Moya-X:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Moya-X: 10b66a7fb441e4ebf5985655235bc0d89d5315d1
+
+PODFILE CHECKSUM: a526238120eb3d0cfe0ee934b2ed13953c9f5b65
+
+COCOAPODS: 1.2.1

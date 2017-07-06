@@ -1,0 +1,22 @@
+{
+  "name": "Moya-X",
+  "version": "0.1.0",
+  "summary": "A short description of Moya-X.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/wangcccong@foxmail.com/Moya-X",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "wangcccong@foxmail.com": "wangcccong@outlook.com"
+  },
+  "source": {
+    "git": "https://github.com/wangcccong@foxmail.com/Moya-X.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "Moya-X/Classes/**/*"
+}
