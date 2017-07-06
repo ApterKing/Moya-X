@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'Moya-X_Example' do
+  pod 'Moya-X', :path => '../'
+
+  target 'Moya-X_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
